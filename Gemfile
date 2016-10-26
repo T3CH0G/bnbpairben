@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'newrelic_rpm'
 gem 'unicorn'
 gem 'rails_12factor'
 gem 'foreman'
