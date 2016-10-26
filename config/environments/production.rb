@@ -2,7 +2,6 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 Searchkick.client = Elasticsearch::Client.new host: ENV['SEARCHBOX_URL']
   # Code is not reloaded between requests.
-  Bundler.require(*Rails.groups(assets: %w(development test production)))
   config.cache_classes = true
 
   # Eager load code on boot. This eager loads most of Rails and
@@ -25,13 +24,12 @@ Searchkick.client = Elasticsearch::Client.new host: ENV['SEARCHBOX_URL']
   # Apache or NGINX already handles this.
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
-config.assets.compile = true
-
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
+  config.assets.compile = false
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
