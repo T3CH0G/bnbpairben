@@ -79,6 +79,11 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
+  adapter: postgresql
+  encoding: unicode
+  database: pairbnb_production
+
+production:
   <<: *default
   database: pairbnb_production
   username: pairbnb
