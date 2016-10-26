@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-Searchbox.client = Elasticsearch::Client.new host: ENV['SEARCHBOX_URL']
+Searchkick.client = Elasticsearch::Client.new host: ENV['SEARCHBOX_URL']
   # Code is not reloaded between requests.
   config.cache_classes = true
 
