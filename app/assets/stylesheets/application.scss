@@ -1,9 +1,9 @@
 @import "bootstrap-sprockets";
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-@import "bootstrap-social.css";
-@import "bootstrap-theme.css";
+@import "bootstrap-social";
+@import "bootstrap-theme";
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
-@import "docs.css";
+@import "docs";
 
 .jumbotron {
 	background-color: red;
