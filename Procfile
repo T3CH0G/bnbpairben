@@ -1,2 +1,1 @@
-web: bundle exec rails server
-web: bundle exec elasticsearch
+web: bundle exec rails server -p $PORT
