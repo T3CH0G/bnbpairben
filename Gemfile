@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 gem 'newrelic_rpm'
 gem 'unicorn'
 gem 'rails_12factor', group: :production
