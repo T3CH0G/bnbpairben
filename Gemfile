@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'newrelic_rpm'
 gem 'unicorn'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 gem 'foreman'
 gem 'searchkick'
 gem 'braintree'
